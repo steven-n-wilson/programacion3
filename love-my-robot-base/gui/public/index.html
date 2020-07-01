@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>COZMO</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+        <!-- RESPONSIVE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/css/estilo.css"/>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Fredoka+One&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- html -->
+        <div class="navbar">
+            <div class="dropdown"></div><img src="styles/css/cozmo_face.png"/><a href="http://127.0.0.1:8085/">COZMO</a>
+        </div>
+
+        <div class="div-izquierda">
+            <div class="h2-code">actions</div>
+            <div class="h2-console">
+                <h4 class="h4-console">program your cozmo</h4>
+            </div>
+        </div>
+
+        <div class="main-div">
+            <!-- DIV donde se agregar las acciones y botón para ejecutar -->
+            <div class="do-action" id="todos"></div>
+            
+            <p>
+            <button id ="run" class="play-button"></button>
+            </p>
+
+            <!-- location.reload(false) -->
+
+            <!-- Opciones  -->
+            <!-- SAY -->
+            <a class="arrow-say">►</a><a class="title-say">SAY</a>
+       
+            <h4 class="opt-text" id="task1">SAY Hello</h4><button style="margin-top: 17px;" class="wrapper" id="add1" onclick="button_add1()">DO</button>
+            <h4 class="opt-text" id="task2">SAY Bye</h4><button style="margin-top: 17px;" class="wrapper" id="add2" onclick="button_add2()">DO</button>
+            <h4 class="opt-text" id="task3">SAY Cozmo</h4><button style="margin-top: 17px;" class="wrapper" id="add3" onclick="button_add3()">DO</button>
+            <h4 class="opt-text" id="task28">SAY Vacations</h4><button style="margin-top: 17px;" class="wrapper" id="add28" onclick="button_add28()">DO</button>
+            <h4 class="opt-text" id="task29">SAY Programming</h4><button style="margin-top: 17px;" class="wrapper" id="add29" onclick="button_add29()">DO</button>
+            <h4 class="opt-text" id="task27">YES Nod</h4><button style="margin-top: 17px;" class="wrapper" id="add27" onclick="button_add27()">DO</button>
+            
+            <!-- TURN -->
+            <a style="margin-top: 53px;" class="arrow-turn">►</a><a style="margin-top: 53px;" class="title-turn">TURN</a>
+
+            <h4 class="opt-text" style="margin-top: 55px;" id="task4">TURN 90º</h4><button style="margin-top: 17px;" class="wrapper" id="add4" onclick="button_add4()">DO</button>
+            <h4 class="opt-text" id="task5">TURN 180º</h4><button style="margin-top: 17px;" class="wrapper" id="add5" onclick="button_add5()">DO</button>
+            <h4 class="opt-text" id="task6">TURN 360º</h4><button style="margin-top: 17px;" class="wrapper" id="add6" onclick="button_add6()">DO</button>
+
+            <!-- MOVE -->
+            <a style="margin-top: 50px;" class="arrow-move">►</a><a style="margin-top: 50px;" class="title-move">MOVE</a>
+
+            <h4 class="opt-text" style="margin-top: 55px;" id="task7">MOVE 50</h4><button style="margin-top: 17px;" class="wrapper" id="add7" onclick="button_add7()">DO</button>
+            <h4 class="opt-text" id="task8">MOVE 75</h4><button style="margin-top: 17px;" class="wrapper" id="add8" onclick="button_add8()">DO</button>
+            <h4 class="opt-text" id="task9">MOVE 100</h4><button style="margin-top: 17px;" class="wrapper" id="add9" onclick="button_add9()">DO</button>
+
+            <!-- FACE ANIMATION -->
+            <a style="margin-top: 75px;" class="arrow-face">►</a><a style="margin-top: 75px;" class="title-face">FACE ANIMATION</a>
+
+            <h4 class="opt-text" style="margin-top: 60px;" id="task10">FACE Happy</h4><button style="margin-top: 17px;" class="wrapper" id="add10" onclick="button_add10()">DO</button>
+            <h4 class="opt-text" id="task11">FACE Sad</h4><button style="margin-top: 17px;" class="wrapper" id="add11" onclick="button_add11()">DO</button>
+            <h4 class="opt-text" id="task12">FACE Angry</h4><button style="margin-top: 17px;" class="wrapper" id="add12" onclick="button_add12()">DO</button>
+
+            <!-- CUBES -->
+            <a style="margin-top: 100px;" class="arrow-cubes">►</a><a style="margin-top: 100px;" class="title-cubes">CUBES</a>
+
+            <h4 class="opt-text" style="margin-top: 60px;" id="task13">STACK cube</h4><button style="margin-top: 17px;" class="wrapper" id="add13" onclick="button_add13()">DO</button>
+            <h4 class="opt-text" id="task14">ROLL cube</h4><button style="margin-top: 17px;" class="wrapper" id="add14" onclick="button_add14()">DO</button>
+            <h4 class="opt-text" id="task30">PICKUP cube</h4><button style="margin-top: 17px;" class="wrapper" id="add30" onclick="button_add30()">DO</button>
+            <h4 class="opt-text" id="task31">DROP cube</h4><button style="margin-top: 17px;" class="wrapper" id="add31" onclick="button_add31()">DO</button>
+            <h4 class="opt-text" id="task32">WHEELIE cube</h4><button style="margin-top: 17px;" class="wrapper" id="add32" onclick="button_add32()">DO</button>
+
+            <!-- HEAD -->
+            <a style="margin-top: 120px;" class="arrow-head">►</a><a style="margin-top: 120px;" class="title-head">HEAD</a>
+
+            <h4 class="opt-text" style="margin-top: 55px;" id="task15">MOVE 0</h4><button style="margin-top: 17px;" class="wrapper" id="add15" onclick="button_add15()">DO</button>
+            <h4 class="opt-text" id="task16">MOVE 30</h4><button style="margin-top: 17px;" class="wrapper" id="add16" onclick="button_add16()">DO</button>
+            <h4 class="opt-text" id="task17">MOVE 50</h4><button style="margin-top: 17px;" class="wrapper" id="add17" onclick="button_add17()">DO</button>
+            <h4 class="opt-text" id="task18">MOVE 100</h4><button style="margin-top: 17px;" class="wrapper" id="add18" onclick="button_add18()">DO</button>
+
+
+            <!-- LIGHTS -->
+            <a style="margin-top: 165px;" class="arrow-lights">►</a><a style="margin-top: 165px;" class="title-lights">LIGHTS</a> 
+
+            <h4 class="opt-text" style="margin-top: 60px;" id="task19">LIGHTS Red</h4><button style="margin-top: 17px;" class="wrapper" id="add19" onclick="button_add19()">DO</button>
+            <h4 class="opt-text" id="task20">LIGHTS Blue</h4><button style="margin-top: 17px;" class="wrapper" id="add20" onclick="button_add20()">DO</button>
+            <h4 class="opt-text" id="task21">LIGHTS Green</h4><button style="margin-top: 17px;" class="wrapper" id="add21" onclick="button_add21()">DO</button>
+            <h4 class="opt-text" id="task22">LIGHTS White</h4><button style="margin-top: 17px;" class="wrapper" id="add22" onclick="button_add22()">DO</button>
+            
+            <!-- LIFT -->
+            <a style="margin-top: 200px;" class="arrow-lift">►</a><a style="margin-top: 200px;" class="title-lift">LIFT</a> 
+
+            <h4 class="opt-text" style="margin-top: 60px;" id="task23">LIFT Up</h4><button style="margin-top: 17px;" class="wrapper" id="add23" onclick="button_add23()">DO</button>
+            <h4 class="opt-text" id="task24">LIFT Down</h4><button style="margin-top: 17px;" class="wrapper" id="add24" onclick="button_add24()">DO</button>
+
+            <!-- CUBE LIGHTS -->
+            <a style="margin-top: 165px;" class="arrow-cube-light">►</a><a style="margin-top: 165px;" class="title-cube-light">CUBE LIGHTS</a> 
+
+            <h4 class="opt-text" style="margin-top: 60px;" id="task25">CUBE Red</h4><button style="margin-top: 17px;" class="wrapper" id="add25" onclick="button_add25()">DO</button>
+            <h4 class="opt-text" id="task26">CUBE Blue</h4><button style="margin-top: 17px;" class="wrapper" id="add26" onclick="button_add26()">DO</button>
+            <h4 class="opt-text" id="task33">CUBE Green</h4><button style="margin-top: 17px;" class="wrapper" id="add33" onclick="button_add33()">DO</button>
+            <h4 class="opt-text" id="task34">CUBE White</h4><button style="margin-top: 17px;" class="wrapper" id="add34" onclick="button_add34()">DO</button>
+
+            <!-- MATH -->
+            <a style="margin-top: 190px;" class="arrow-math">►</a><a style="margin-top: 190px;" class="title-math">MATH</a> 
+
+            <h4 class="opt-text" style="margin-top: 60px;" id="task35">MATH 2x2</h4><button style="margin-top: 17px;" class="wrapper" id="add35" onclick="button_add35()">DO</button>
+            <h4 class="opt-text" id="task36">MATH 1+5</h4><button style="margin-top: 17px;" class="wrapper" id="add36" onclick="button_add36()">DO</button>
+            <h4 class="opt-text" id="task37">MATH 10/2</h4><button style="margin-top: 17px;" class="wrapper" id="add37" onclick="button_add37()">DO</button>
+            <h4 class="opt-text" id="task38">MATH 8-3</h4><button style="margin-top: 17px;" class="wrapper" id="add38" onclick="button_add38()">DO</button>
+
+            <!-- COUNT -->
+            <a style="margin-top: 190px;" class="arrow-count">►</a><a style="margin-top: 190px;" class="title-count">COUNT</a> 
+
+            <h4 class="opt-text" style="margin-top: 60px;" id="task39">COUNT 3</h4><button style="margin-top: 17px;" class="wrapper" id="add39" onclick="button_add39()">DO</button>
+            <h4 class="opt-text" id="task40">COUNT 5</h4><button style="margin-top: 17px;" class="wrapper" id="add40" onclick="button_add40()">DO</button>
+            <h4 class="opt-text" id="task41">COUNT 8</h4><button style="margin-top: 17px;" class="wrapper" id="add41" onclick="button_add41()">DO</button>
+            <h4 class="opt-text" id="task42">COUNT 10</h4><button style="margin-top: 17px;" class="wrapper" id="add42" onclick="button_add42()">DO</button>
+
+            <!-- SOUND -->
+            <a style="margin-top: 190px;" class="arrow-sound">►</a><a style="margin-top: 190px;" class="title-sound">SOUND</a> 
+
+            <h4 class="opt-text" style="margin-top: 60px;" id="task43">SOUND Alien</h4><button style="margin-top: 17px;" class="wrapper" id="add43" onclick="button_add43()">DO</button>
+            <h4 class="opt-text" id="task44">SOUND Orchestra</h4><button style="margin-top: 17px;" class="wrapper" id="add44" onclick="button_add44()">DO</button>
+            <h4 class="opt-text" id="task45">SOUND Brick</h4><button style="margin-top: 17px;" class="wrapper" id="add45" onclick="button_add45()">DO</button>
+           
+        </div>
+        <!-- html -->
+
+
+        <!-- JavaScript -->
+        <script>
+            //Función para el botón de run
+            $(document).ready(function() {
+    $('p').click(function() {
+        var someName = $("div.do-action").text()
+        var name = someName.replace(/red/gi,"red_light")
+        var name = name.replace(/blue/gi,"blue_light")
+        // var name = name.replace(/º/gi,"")
+        // var name = name.replace(/green/gi,"green_light")
+        // var name = name.replace(/white/gi,"white_light")
+        // var name = name.replace(/2x2/gi,"4")
+        // var name = name.replace(/1+5/gi,"6")
+        // var name = name.replace(/10/2/gi,"5")
+        // var name = name.replace(/8-3/gi,"5")
+
+        var name = name.substring(0, name.length -1)
+        
+        
+        
+        
+            $.post('/save-user', {funcion:name}, function(data, status) {
+                console.log(`${data.message} and status is ${status}`)
+                
+            })
+            window.location.assign("/postdata");
+            location.reload();
+            setTimeout(function () {
+            window.location.assign("/"); 
+        },10); 
+        window.location.assign("/");   
+        location.reload();
+        
+        })
+        
+    })
+
+        </script>
+
+        <script>
+            var todos = new Array;
+            function get_todos() {
+                var todos_str = localStorage.getItem('todo');
+                if (todos_str !== null) {
+                    todos = JSON.parse(todos_str);
+                }        
+                return todos;
+            }
+
+            function delete_list(){
+                todos.length = 0;
+            }
+
+            //Funciones para hacer get del id de cada opción
+            // SAY
+            function add1() {
+                var task1 = document.getElementById('task1').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add2() {
+                var task1 = document.getElementById('task2').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add3() {
+                var task1 = document.getElementById('task3').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add27() {
+                var task1 = document.getElementById('task27').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add28() {
+                var task1 = document.getElementById('task28').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add29() {
+                var task1 = document.getElementById('task29').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //TURN
+            function add4() {
+                var task1 = document.getElementById('task4').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add5() {
+                var task1 = document.getElementById('task5').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add6() {
+                var task1 = document.getElementById('task6').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //MOVE
+            function add7() {
+                var task1 = document.getElementById('task7').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add8() {
+                var task1 = document.getElementById('task8').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add9() {
+                var task1 = document.getElementById('task9').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //FACE
+            function add10() {
+                var task1 = document.getElementById('task10').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add11() {
+                var task1 = document.getElementById('task11').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add12() {
+                var task1 = document.getElementById('task12').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //CUBES
+            function add13() {
+                var task1 = document.getElementById('task13').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add14() {
+                var task1 = document.getElementById('task14').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add30() {
+                var task1 = document.getElementById('task30').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add31() {
+                var task1 = document.getElementById('task31').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add32() {
+                var task1 = document.getElementById('task32').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+             //HEAD
+             function add15() {
+                var task1 = document.getElementById('task15').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add16() {
+                var task1 = document.getElementById('task16').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add17() {
+                var task1 = document.getElementById('task17').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add18() {
+                var task1 = document.getElementById('task18').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+              //LIGHTS
+              function add19() {
+                var task1 = document.getElementById('task19').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add20() {
+                var task1 = document.getElementById('task20').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add21() {
+                var task1 = document.getElementById('task21').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add22() {
+                var task1 = document.getElementById('task22').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //LIFT
+            function add23() {
+                var task1 = document.getElementById('task23').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function add24() {
+                var task1 = document.getElementById('task24').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //CUBE LIGHTS
+            function add25() {
+                var task1 = document.getElementById('task25').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add26() {
+                var task1 = document.getElementById('task26').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add33() {
+                var task1 = document.getElementById('task33').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add34() {
+                var task1 = document.getElementById('task34').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //MATH
+            function add35() {
+                var task1 = document.getElementById('task35').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add36() {
+                var task1 = document.getElementById('task36').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add37() {
+                var task1 = document.getElementById('task37').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add38() {
+                var task1 = document.getElementById('task38').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //COUNT
+            function add39() {
+                var task1 = document.getElementById('task39').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add40() {
+                var task1 = document.getElementById('task40').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add41() {
+                var task1 = document.getElementById('task41').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add42() {
+                var task1 = document.getElementById('task42').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //SOUND
+            function add43() {
+                var task1 = document.getElementById('task43').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add44() {
+                var task1 = document.getElementById('task44').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            function add45() {
+                var task1 = document.getElementById('task45').textContent;
+                var todos = get_todos();
+                todos.push(task1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+
+            //----------------
+
+            function remove() {
+                var id = this.getAttribute('id');
+                var todos = get_todos();
+                todos.splice(id, 1);
+                localStorage.setItem('todo', JSON.stringify(todos));
+                show();
+                return false;
+            }
+            function show() {
+                var todos = get_todos();
+                var html = '<ul>';
+                for(var i=0; i<todos.length; i++) {
+                    html += '<li>' + todos[i] + '<button class="remove btn" id="' + i  + '">x</button></li>';
+                };
+                html += '</ul>';
+                document.getElementById('todos').innerHTML = html;
+                var buttons = document.getElementsByClassName('remove');
+                for (var i=0; i < buttons.length; i++) {
+                    buttons[i].addEventListener('click', remove);
+                };
+            }
+
+            // time
+            var time = new Date();
+            console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
+
+            //Funciones para los botones de cada opción
+            //SAY
+            function button_add1(){
+                document.getElementById('add1').addEventListener('click', add1);
+                show();
+            }
+
+            function button_add2(){
+                document.getElementById('add2').addEventListener('click', add2);
+                show();
+            }
+            
+            function button_add3(){
+                document.getElementById('add3').addEventListener('click', add3);
+                show();
+            }
+
+            function button_add27(){
+                document.getElementById('add27').addEventListener('click', add27);
+                show();
+            }
+
+            function button_add28(){
+                document.getElementById('add28').addEventListener('click', add28);
+                show();
+            }
+
+            function button_add29(){
+                document.getElementById('add29').addEventListener('click', add29);
+                show();
+            }
+
+            //TURN
+            function button_add4(){
+                document.getElementById('add4').addEventListener('click', add4);
+                show();
+            }
+
+            function button_add5(){
+                document.getElementById('add5').addEventListener('click', add5);
+                show();
+            }
+            
+            function button_add6(){
+                document.getElementById('add6').addEventListener('click', add6);
+                show();
+            }
+
+            //MOVE
+            function button_add7(){
+                document.getElementById('add7').addEventListener('click', add7);
+                show();
+            }
+
+            function button_add8(){
+                document.getElementById('add8').addEventListener('click', add8);
+                show();
+            }
+            
+            function button_add9(){
+                document.getElementById('add9').addEventListener('click', add9);
+                show();
+            }
+
+            //FACE
+            function button_add10(){
+                document.getElementById('add10').addEventListener('click', add10);
+                show();
+            }
+
+            function button_add11(){
+                document.getElementById('add11').addEventListener('click', add11);
+                show();
+            }
+            
+            function button_add12(){
+                document.getElementById('add12').addEventListener('click', add12);
+                show();
+            }
+
+            //CUBES
+            function button_add13(){
+                document.getElementById('add13').addEventListener('click', add13);
+                show();
+            }
+
+            function button_add14(){
+                document.getElementById('add14').addEventListener('click', add14);
+                show();
+            }
+
+            function button_add30(){
+                document.getElementById('add30').addEventListener('click', add30);
+                show();
+            }
+
+            function button_add31(){
+                document.getElementById('add31').addEventListener('click', add31);
+                show();
+            }
+
+            function button_add32(){
+                document.getElementById('add32').addEventListener('click', add32);
+                show();
+            }
+
+            //HEAD
+            function button_add15(){
+                document.getElementById('add15').addEventListener('click', add15);
+                show();
+            }
+
+            function button_add16(){
+                document.getElementById('add16').addEventListener('click', add16);
+                show();
+            }
+
+            function button_add17(){
+                document.getElementById('add17').addEventListener('click', add17);
+                show();
+            }
+
+            function button_add18(){
+                document.getElementById('add18').addEventListener('click', add18);
+                show();
+            }
+
+            //LIGHTS
+            function button_add19(){
+                document.getElementById('add19').addEventListener('click', add19);
+                show();
+            }
+
+            function button_add20(){
+                document.getElementById('add20').addEventListener('click', add20);
+                show();
+            }
+
+            function button_add21(){
+                document.getElementById('add21').addEventListener('click', add21);
+                show();
+            }
+
+            function button_add22(){
+                document.getElementById('add22').addEventListener('click', add22);
+                show();
+            }
+
+            //LIFT
+            function button_add23(){
+                document.getElementById('add23').addEventListener('click', add23);
+                show();
+            }
+
+            function button_add24(){
+                document.getElementById('add24').addEventListener('click', add24);
+                show();
+            }
+
+            //CUBE LIGHTS
+            function button_add25(){
+                document.getElementById('add25').addEventListener('click', add25);
+                show();
+            }
+
+            function button_add26(){
+                document.getElementById('add26').addEventListener('click', add26);
+                show();
+            }
+
+            function button_add33(){
+                document.getElementById('add33').addEventListener('click', add33);
+                show();
+            }
+
+            function button_add34(){
+                document.getElementById('add34').addEventListener('click', add34);
+                show();
+            }
+
+            //MATH
+            function button_add35(){
+            document.getElementById('add35').addEventListener('click', add35);
+            show();
+            }
+
+            function button_add36(){
+                document.getElementById('add36').addEventListener('click', add36);
+                show();
+            }
+
+            function button_add37(){
+                document.getElementById('add37').addEventListener('click', add37);
+                show();
+            }
+
+            function button_add38(){
+                document.getElementById('add38').addEventListener('click', add38);
+                show();
+            }
+
+            //COUNT
+            function button_add39(){
+            document.getElementById('add39').addEventListener('click', add39);
+            show();
+            }
+
+            function button_add40(){
+                document.getElementById('add40').addEventListener('click', add40);
+                show();
+            }
+
+            function button_add41(){
+                document.getElementById('add41').addEventListener('click', add41);
+                show();
+            }
+
+            function button_add42(){
+                document.getElementById('add42').addEventListener('click', add42);
+                show();
+            }
+
+             //SOUND
+             function button_add43(){
+            document.getElementById('add43').addEventListener('click', add43);
+            show();
+            }
+
+            function button_add44(){
+                document.getElementById('add44').addEventListener('click', add44);
+                show();
+            }
+
+            function button_add45(){
+                document.getElementById('add45').addEventListener('click', add45);
+                show();
+            }
+            //----------------
+            
+
+            /* dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+
+        <script class="alert alert-success">
+            // mensaje del boton play
+            function mensaje() {
+                alert ("Running...");
+            }
+        </script> -->
+        <!-- JavaScript
+
+    </body>
+
+</html>

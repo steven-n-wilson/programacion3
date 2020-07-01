@@ -1,0 +1,3 @@
+flask
+cozmo
+requests

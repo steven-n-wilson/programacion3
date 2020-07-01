@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Var vs Let</title>
+</head>
+
+<body>
+
+    <h1 id="var" style="color:black;">GeeksForGeeks</h1>
+    <h1 id="let" style="color:black;">GeeksForGeeks</h1>
+    <button id="btn" onclick="setColor()">Start</button>
+    <!-- executing function on button click -->
+
+    <script type="text/javascript">
+
+        function setColor(){
+
+            var myInterval = setInterval(function(){
+                var x = document.body;
+                //elvis
+                x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "pink" : "yellow";
+            }, 500)
+
+        }
+
+    </script>
+</body>

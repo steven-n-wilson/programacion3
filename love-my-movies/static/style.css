@@ -1,0 +1,534 @@
+/* banner */
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0%;
+    top: 0%; 
+
+    /* Gradients/Blue */
+    background: linear-gradient(162.83deg, rgb(56, 10, 129) 6.03%, #48D3F2 97.94%, rgb(98, 101, 249) 97.94%);
+}
+
+.bannerHeading{
+    /* Popular Solutions */
+    position: absolute;
+    width: 205px;
+    height: 50px;
+    left: 30px;
+    top: 15px;
+}
+.bannerHeadingText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px ;
+    line-height: 0px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    color:#EAF3FE;
+
+}
+
+#bodyHeading{
+    /* Discover New Solutions */
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    left: 30px;
+    top: 300px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 0px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* -----------------------------  appBox --------------------------------------------------------- */
+.appBox1{
+    /* Rectangle 2 */
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    left: 30px;
+    top: 90px;
+
+    /* Default Background */
+    background: #FFFFFF;
+
+    /* Cards Shadows */
+    box-shadow: 0px 4px 8px rgba(38, 72, 116, 0.1);
+    border-radius: 16px;
+}
+.appBoxImage1{
+    position: absolute;
+    /* width: 3%;
+    height: 1%; */
+    left: 15px;
+    top: 15px;
+}
+.appBoxImageBuilding1{
+    position: absolute;
+    left: 72px;
+    /* right: 50.62%; */
+    top:50px;
+    bottom: 0px;
+}
+#appBox1Head1{
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    left: 75px;
+    top: 0px;
+}
+
+.appboxText1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    color: #264874;
+}
+.appBox1SubHeading1{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    left: 90px;
+    top: 15px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 0px;
+
+    /* identical to box height, or 17px */
+    display: flex;
+    align-items: center;
+
+    color:#8C91A1;
+}
+#appBox1Content1{
+    position: absolute;
+    width: 235px;
+    height: 25px;
+    left: 15px;
+    top: 60px;
+}
+#appBox1ContentText1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    color:#8C91A1;
+}
+.buttonRequest1{
+    position: absolute;
+    left: 15px;
+    right: 180px;
+    top: 127px;
+    bottom: 15px;
+
+    /* Default Background */
+    background: #FFFFFF;
+
+    /* Colors/LightBlue */
+    border: 10px solid rgb(126, 164, 214);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.buttonRequestText1{
+    position: absolute;
+    left: -10%;
+    top: 29.08%;
+    bottom: 68.96%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #264874;
+}
+
+/* appBox END --------------------------------------------------------------------- */
+.pageContent{
+    background: #E5E5E5;
+}
+
+/* appBox 2 ---------------------------------------------------------------------- */
+.appBox2{
+    /* Rectangle 2 */
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    left: 300px;
+    top: 90px;
+
+    /* Default Background */
+    background: #FFFFFF;
+
+    /* Cards Shadows */
+    box-shadow: 0px 4px 8px rgba(38, 72, 116, 0.1);
+    border-radius: 16px;
+}
+.appBoxImage2{
+    position: absolute;
+    /* width: 3%;
+    height: 1%; */
+    left: 15px;
+    top: 15px;
+}
+.appBoxImageBuilding2{
+    position: absolute;
+    left: 72px;
+    /* right: 50.62%; */
+    top:50px;
+    bottom: 0px;
+}
+#appBox2Head{
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    left: 75px;
+    top: 0px;
+}
+.appboxText2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    color: #264874;
+}
+.appBox2SubHeading{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    left: 90px;
+    top: 15px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 0px;
+
+    /* identical to box height, or 17px */
+    display: flex;
+    align-items: center;
+
+    color:#8C91A1;
+}
+#appBoxContent2{
+    position: absolute;
+    width: 235px;
+    height: 25px;
+    left: 15px;
+    top: 60px;
+}
+#appBox2ContentText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    color:#8C91A1;
+}
+
+.buttonRequest2{
+    position: absolute;
+    left: 15px;
+    right: 180px;
+    top: 127px;
+    bottom: 15px;
+
+    /* Default Background */
+    background: #FFFFFF;
+
+    /* Colors/LightBlue */
+    border: 10px solid rgb(126, 164, 214);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.buttonRequestText2{
+    position: absolute;
+    left: -10%;
+    top: 29.08%;
+    bottom: 68.96%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #264874;
+} 
+
+/* appBox2  END --------------------------------------------------------------------- */
+
+/* appBox 3 -------------------------------------------------------------------------- */
+.appBox3{
+    /* Rectangle 2 */
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    left: 570px;
+    top: 90px;
+
+    /* Default Background */
+    background: #FFFFFF;
+
+    /* Cards Shadows */
+    box-shadow: 0px 4px 8px rgba(38, 72, 116, 0.1);
+    border-radius: 16px;
+}
+.appBoxImage3{
+    position: absolute;
+    /* width: 3%;
+    height: 1%; */
+    left: 15px;
+    top: 15px;
+}
+.appBoxImageBuilding3{
+    position: absolute;
+    left: 72px;
+    /* right: 50.62%; */
+    top:50px;
+    bottom: 0px;
+}
+#appBox3Head{
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    left: 75px;
+    top: 0px;
+}
+.appboxText3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    color: #264874;
+}
+.appBox3SubHeading{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    left: 90px;
+    top: 15px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 0px;
+
+    /* identical to box height, or 17px */
+    display: flex;
+    align-items: center;
+
+    color:#8C91A1;
+}
+#appBoxContent3{
+    position: absolute;
+    width: 235px;
+    height: 25px;
+    left: 15px;
+    top: 60px;
+}
+#appBox3ContentText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    color:#8C91A1;
+}
+
+.buttonRequest3{
+    position: absolute;
+    left: 15px;
+    right: 180px;
+    top: 127px;
+    bottom: 15px;
+
+    /* Default Background */
+    background: #FFFFFF;
+
+    /* Colors/LightBlue */
+    border: 10px solid rgb(126, 164, 214);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.buttonRequestText3{
+    position: absolute;
+    left: -10%;
+    top: 29.08%;
+    bottom: 68.96%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #264874;
+} 
+
+/* appBox3  END --------------------------------------------------------------------- */
+
+
+/* AppBox 4 ----------------------------------------------------------------------- */
+
+.appBox4{
+    /* Rectangle 2 */
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    left: 30px;
+    top: 370px;
+
+    /* Default Background */
+    background: #FFFFFF;
+
+    /* Cards Shadows */
+    box-shadow: 0px 4px 8px rgba(38, 72, 116, 0.1);
+    border-radius: 16px;
+}
+.appBoxImage4{
+    position: absolute;
+    /* width: 3%;
+    height: 1%; */
+    left: 15px;
+    top: 15px;
+}
+.appBoxImageBuilding4{
+    position: absolute;
+    left: 72px;
+    /* right: 50.62%; */
+    top:50px;
+    bottom: 0px;
+}
+#appBox4Head{
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    left: 75px;
+    top: 0px;
+}
+.appboxText4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    color: #264874;
+}
+.appBox4SubHeading{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    left: 90px;
+    top: 15px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 0px;
+
+    /* identical to box height, or 17px */
+    display: flex;
+    align-items: center;
+
+    color:#8C91A1;
+}
+#appBoxContent4{
+    position: absolute;
+    width: 235px;
+    height: 25px;
+    left: 15px;
+    top: 60px;
+}
+#appBox4ContentText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    color:#8C91A1;
+}
+
+.buttonRequest4{
+    position: absolute;
+    left: 15px;
+    right: 180px;
+    top: 127px;
+    bottom: 15px;
+
+    /* Default Background */
+    background: #FFFFFF;
+
+    /* Colors/LightBlue */
+    border: 10px solid rgb(126, 164, 214);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.buttonRequestText4{
+    position: absolute;
+    left: -10%;
+    top: 29.08%;
+    bottom: 68.96%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #264874;
+} 
+/* appBox 4 END --------------------------------------------------------------------- */
+
+
+
+

@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+}
+h1 {
+  color: white;
+}
+p {
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  padding: 1vw 1vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+
+.btn {
+  width:58vw;
+  padding:10px;
+  margin-bottom: 20px;
+  /* font-size: 1.5vw; */
+}
+

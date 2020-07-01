@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>loveMyMovies</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static\style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='static\style.csss') }}"> -->
+</head>
+<body>
+    {% if data is defined %}
+    <header> 
+<!--BANNER-->
+    <div class="banner">
+            <div class="bannerHeading">
+                <div class="bannerHeadingText">
+                    <p> {{webTitle}}</p>
+                    
+                </div>
+            </div>
+
+<!-- appBox (primera hasta arriba lado izquierdo) -->
+            <div class="appBox1">
+                <div class="appBoxImage1">
+                    <img src="..\static\love_my_movies.png" alt="Paypal Logo" width="20%" height="20%" >
+                </div>
+                <div class="appBoxImageBuilding1">
+                        <img src="..\static\pinIcon.png" alt="Building Icon" width="10%" height="15%" >
+                    </div>
+
+                <div id="appBox1Head1">
+                    <div class="appboxText1">
+                        <p>{{appBox1Title}} </p>
+                    </div>
+                </div>
+                <div class="appBox1SubHeading1">
+                    <p>{{appBox1Subheading}}</p>
+                </div>
+                <div id="appBox1Content1">
+                    <div id="appBox1ContentText1">
+                        <p>{{appBox1ContentText[0:125]}}</p>
+                    </div>
+                </div>
+                <div class="buttonRequest1">
+                    <div class="buttonRequestId1">
+                        <div class="buttonRequestText1">
+                            <a href="https://www.themoviedb.org/movie" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Info.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+     <!-- appBox2 (Caja arriba 2nda)  -->
+
+     <div class="appBox2">
+        <div class="appBoxImage2">
+            <img src="..\static\love_my_movies.png" alt="Paypal Logo" width="20%" height="20%" >
+        </div>
+        
+        <div class="appBoxImageBuilding2">
+                <img src="..\static\pinIcon.png" alt="Building Icon" width="10%" height="15%" >
+            </div>
+
+        <div id="appBox2Head">
+            <div class="appboxText4">
+                <p>{{appBox2Title}}</p>
+            </div>
+        </div>
+        <div class="appBox2SubHeading">
+            <p>{{appBox2Subheading}}</p>
+        </div>
+        <div id="appBoxContent2">
+            <div id="appBox2ContentText">
+                <p>{{appBox2ContentText[0:125]}}</p>
+            </div>
+        </div>
+        <div class="buttonRequest2">
+            <div class="buttonRequestId2">
+                <div class="buttonRequestText2">
+                    <a href="https://www.themoviedb.org/movie" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Info.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- appBox 2 END ------------------------------------------------------------------------------------------------------------->
+
+     <!-- appBox3 (tercera caja de arriba)  -->
+
+     <div class="appBox3">
+        <div class="appBoxImage3">
+            <img src="..\static\love_my_movies.png" alt="Paypal Logo" width="20%" height="20%" >
+        </div>
+        
+        <div class="appBoxImageBuilding3">
+                <img src="..\static\pinIcon.png" alt="Building Icon" width="10%" height="15%" >
+            </div>
+
+        <div id="appBox3Head">
+            <div class="appboxText3">
+                <p>{{appBox3Title}}</p>
+            </div>
+        </div>
+        <div class="appBox3SubHeading">
+            <p>{{appBox3Subheading}}</p>
+        </div>
+        <div id="appBoxContent3">
+            <div id="appBox3ContentText">
+                <p>{{appBox3ContentText[0:125]}}</p>
+            </div>
+        </div>
+        <div class="buttonRequest3">
+            <div class="buttonRequestId3">
+                <div class="buttonRequestText3">
+                    <a href="https://www.themoviedb.org/movie" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Info.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- appBox 3 END ------------------------------------------------------------------------------------------------------------->
+    
+    <div id="bodyHeading">
+         <p>{{webSubtitle}}</p>
+    </div>
+
+     <!-- appBox4 (Caja abajo lado izquierdo) -->
+     <div class="appBox4">
+        <div class="appBoxImage4">
+            <img src="..\static\love_my_movies.png" alt="Paypal Logo" width="20%" height="20%" >
+        </div>
+        
+        <div class="appBoxImageBuilding4">
+                <img src="..\static\pinIcon.png" alt="Building Icon" width="10%" height="15%" >
+            </div>
+
+        <div id="appBox4Head">
+            <div class="appboxText4">
+                <p>{{appBox4Title}}</p>
+            </div>
+        </div>
+        <div class="appBox4SubHeading">
+            <p>{{appBox4Subheading}}</p>
+        </div>
+        <div id="appBoxContent4">
+            <div id="appBox4ContentText">
+                <p>{{appBox4ContentText[0:120]}}</p>
+                <p>...</p>
+            </div>
+        </div>
+        <div class="buttonRequest4">
+            <div class="buttonRequestId4">
+                <div class="buttonRequestText4">
+                    <a href="https://www.themoviedb.org/movie" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Info.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    </body>
+</html>

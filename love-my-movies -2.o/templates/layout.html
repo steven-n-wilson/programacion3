@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>loveMyMovies</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static\style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='static\style.csss') }}"> -->
+</head>
+<body>
+    <!-- {% if data is defined %} -->
+    <header> 
+<!--BANNER-->
+    <div class="banner">
+            <div class="bannerHeading">
+                <div class="bannerHeadingText">
+                    <p> {{webTitle}}</p>
+                    
+                </div>
+            </div>
+
+<!-- appBox (primera hasta arriba lado izquierdo) -->
+
+    {% include 'includes/_appBox.html' %}
+    
+    <div id="bodyHeading">
+            <p>{{webSubtitle}}</p>
+            <!-- <p>{{idNumber}}</p> -->
+    </div>
+
+<!-- appBox4 (Caja abajo lado izquierdo) -->
+    <!-- {% include 'includes/_appBox.html' %} -->
+<!-- <div class="appBox4">
+        <div class="appBoxImage1">
+            <img src="..\static\love_my_movies.png" alt="Paypal Logo" width="20%" height="20%" >
+        </div>
+        <div class="appBoxImageBuilding1">
+                <img src="..\static\pinIcon.png" alt="Building Icon" width="10%" height="15%" >
+            </div>
+    
+        <div class="appBox1Head1">
+            <div class="appboxText1">
+                <p>{{appBox4Title}} </p>
+            </div>
+        </div>
+        <div class="appBox1SubHeading1">
+            <p>{{appBox4Subheading}}</p>
+        </div>
+        <div class="appBox1Content1">
+            <div class="appBox1ContentText1">
+                <p>{{appBox4ContentText[0:125]}}</p>
+            </div>
+        </div>
+        <div class="buttonRequest1">
+            <div class="buttonRequestId1">
+                <div class="buttonRequestText1">
+                    <a href="https://www.themoviedb.org/movie" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Info.</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- {% endif %} -->
+    </body>
+</html>
