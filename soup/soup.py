@@ -22,3 +22,6 @@ print(soup.title.string)
 for div in soup.find_all("div"):
     print(div)
     print("--------------------------")
+
+# for a in soup.find_all('a', href=True):
+#     print("Found the URL:", a['href'])
